@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+	<meta name="author" content="Mascardo, Christian Mark C.">
+    <title>FA6Mascardo</title>
+    <style>
+        body {
+            font-size: 30px;
+        }
+
+        .first {
+            text-decoration: none;
+        }
+
+        .first:link {
+            color: white;
+            background-color: rgb(35, 75, 63);
+        }
+
+        .first:visited {
+            color: darkblue;
+            background-color: coral;
+        }
+
+        .first:focus {
+            color: yellow;
+            background-color: black;
+        }
+
+        .first:hover {
+            color: orange;
+            background-color: green;
+        }
+
+        .first:active {
+            color: blue;
+            background-color: gold;
+        }
+
+        .second {
+            text-decoration: none;
+        }
+
+        .second:link {
+            color: white;
+            background-color: rgb(70, 130, 70);
+        }
+
+        .second:visited {
+            color: yelloworange;
+            background-color: gold;
+        }
+
+        .second:focus {
+            color: yellow;
+            background-color: black;
+        }
+
+        .second:hover {
+            color: orange;
+            background-color: pink;
+        }
+
+        .second:active {
+            color: blue;
+            background-color: violet;
+        }
+
+        div {
+            border: 2px solid black;
+            width: 200px;
+            height: 150px;
+            padding: 10px;
+        }
+
+        div:target#div1 {
+            background-color: rgb(14, 14, 83);
+            color: rgb(235, 192, 84);
+        }
+
+        div:target#div2 {
+            background-color: rgb(42, 162, 170);
+            color: rgb(235, 192, 84);
+            border: 10px dotted green;
+        }
+    </style>
+</head>
+<body>
+    <a class="first" href="#div1">First Link</a>
+    <a class="second" href="#div2">Second Link</a>
+    <br><br>
+    <div id="div1">Div 1 here</div>
+    <br>
+    <div id="div2">Div 2 here</div>
+</body>
+</html>
