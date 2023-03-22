@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>Numerology</title>
+		<!-- provide the necessary meta tags -->
+        <style>
+        	body {background: lightblue; 
+            	text-align: center;
+            	font-family: arial;
+                color: navy;
+            }
+            button {padding: 10px; background:violet }
+            span {font-size: 0.5em; color: maroon}
+        </style>
+
+	</head>
+<body>
+	<h1> Your Fortune is in your name </h1>
+	<h2> Your Name is: <span id="thename"> </span></h2>
+    <h2> Today's fortune: <span id="fortune"> </span></h2>
+    
+    <button onclick = "myFunction()"> Click here to enter your name </button>
+     <script>
+    	/* do not forget to include comments in your answer */
+		function myFunction() {
+		var name = prompt("Please enter your name"); // prompts the name of the user
+		document.getElementById("thename").innerHTML = name;
+		
+		var length = name.length; // returns the length of the name
+		var num = length; // declares object to be used
+	
+		while(num > 9) {
+		num = (num - (num % 10)) / 10 + (num % 10); // whole line of code that returns the final single digit
+		}
+		
+		switch(num) { // sets the fortune for each single digit number
+			case 0:
+				document.getElementById("fortune").innerHTML = "Gaganda buhay mo";
+				break;
+			case 1:
+				document.getElementById("fortune").innerHTML = "Mamahalin kana niya";
+				break;
+			case 2:
+				document.getElementById("fortune").innerHTML = "Yayaman ka bukas";
+				break;
+			case 3:
+				document.getElementById("fortune").innerHTML = "Mamalasin ka ngayong araw";
+				break;
+			case 4:
+				document.getElementById("fortune").innerHTML = "Makakakita ka ng himala mamaya";
+				break;
+			case 5:
+				document.getElementById("fortune").innerHTML = "Gwapo ka habang buhay";
+				break;
+			case 6:
+				document.getElementById("fortune").innerHTML = "Sukarap naka unya";
+				break;
+			case 7:
+				document.getElementById("fortune").innerHTML = "You'll be a very lucky boy/girl today";
+				break;
+			case 8:
+				document.getElementById("fortune").innerHTML = "You'll find someone new";
+				break;
+			case 9:
+				document.getElementById("fortune").innerHTML = "Makikita mo ang iyong soul mate ngayong araw";
+				break;
+		
+		}
+		}9
+    
+    </script>
+    
+</body>
+</html>
+
