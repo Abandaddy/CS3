@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+	<style>
+	 td, table {
+		border: 1px solid black;
+	 }
+	</style>
+	<body>
+		<input type="number" id="number1" min="2" max="10"></input>
+		<input type="number" id="number2" min="2" max="10"></input>
+		<br>
+		<button onclick="gentable()">Generate a Table</button>
+		<script>
+			var wholetable;
+			function gentable(){
+				if(wholetable){
+				wholetable.remove();
+				}
+				num1 = document.getElementById('number1').value;
+				num2 = document.getElementById('number2').value;
+	
+				if(number1 < 2 || number1 > 10 || number2 < 2 || number2 > 10){
+					alert("Please enter a number between 2 and 10");
+				}
+				
+				else{
+					wholetable = document.createElement('table');
+					document.body.appendChild(wholetable);
+					for(var j = 1; j<=num1; j++){
+							var tablerow = document.createElement('tr');
+								for(var u = 1; u<=num2; u++){
+									var tablecell = document.createElement('td');
+									tablecell.innerHTML = u*j;
+									tablerow.appendChild(tablecell);
+						}
+						wholetable.appendChild(tablerow);
+					}
+				}
+			
+			
+			}
+		</script>
+
+	</body>
+
+</html
