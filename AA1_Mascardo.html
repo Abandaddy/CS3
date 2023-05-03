@@ -6,12 +6,12 @@
 			var orderLength = order.length;
 			var start = order.indexOf("AUG");
 			var codons = [];
-			var x = 0;
+			var j = 0;
 			var stopCodon = 0;	
 			if (start != -1) {	
 				for(var i = start; i < orderLength; i = i+3) {			
-					codons[x] = order.slice(i, i+3); 
-					x++;				
+					codons[j] = order.slice(i, i+3); 
+					j++;				
 					}			
 				for(var i = start; i < codons.length; i++) {			
 					if(codons[i] == "UAA" || codons[i] == "UAG" || codons[i] == "UGA") {				
