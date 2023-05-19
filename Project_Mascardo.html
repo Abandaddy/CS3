@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>NCE Math Reviewer</title>
+  <style>
+  
+ title {
+  font-family: Lucida Console, sans-serif;
+  background-color: #8fbc8f;
+}
+  
+body {
+  font-family: Arial, sans-serif;
+  background-color: #8fbc8f;
+}
+
+.container {
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: #fafad2;
+  border-radius: 10px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+  text-align: center;
+  color: #333;
+}
+
+h2 {
+  margin-top: 20px;
+  font-size: 18px;
+  color: #333;
+  background-color: #fafad2;
+  padding: 10px;
+  border-radius: 5px;
+}
+
+form {
+  margin-top: 20px;
+}
+
+input[type="radio"] {
+  margin-bottom: 10px;
+}
+
+button[type="submit"] {
+  margin-top: 20px;
+  padding: 10px 20px;
+  background-color: #A020F0;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+button[type="reset"] {
+  margin-top: 20px;
+  padding: 10px 20px;
+  background-color: #f08080;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+button[type="submit"]:hover {
+  background-color:#45a049;
+}
+
+button[type="reset"]:hover {
+  background-color: #45a049;
+}
+
+#result {
+  margin-top: 20px;
+  text-align: center;
+  font-size: 18px;
+  font-weight: bold;
+}
+  </style>
+</head>
+<body>
+  <h1>NCE Math Reviewer</h1>
+  <form id="examForm">
+    <h2>Question 1:</h2>
+    <p>What is the value of 3/4 + 1/2?</p>
+    <input type="radio" name="q1" value="a"> a) 1/4<br>
+    <input type="radio" name="q1" value="b"> b) 1/2<br>
+    <input type="radio" name="q1" value="c"> c) 1 1/4<br>
+
+    <h2>Question 2:</h2>
+    <p>What is the product of 2/3 and 3/5?</p>
+    <input type="radio" name="q2" value="a"> a) 1/5<br>
+    <input type="radio" name="q2" value="b"> b) 2/5<br>
+    <input type="radio" name="q2" value="c"> c) 1/2<br>
+
+    <h2>Question 3:</h2>
+    <p>What is the value of the expression 2^(2) * √16?</p>
+    <input type="radio" name="q3" value="a"> a) 4<br>
+    <input type="radio" name="q3" value="b"> b) 8<br>
+    <input type="radio" name="q3" value="c"> c) 16<br>
+
+    <h2>Question 4:</h2>
+    <p>What is the value of 3x + 5 when x = 4?</p>
+    <input type="radio" name="q4" value="a"> a) 12<br>
+    <input type="radio" name="q4" value="b"> b) 17<br>
+    <input type="radio" name="q4" value="c"> c) 20<br>
+
+    <h2>Question 5:</h2>
+    <p>What is the next number in the sequence: 1/3, 2/3, 1, 4/3, ... ?</p>
+    <input type="radio" name="q5" value="a"> a) 1 2/3<br>
+    <input type="radio" name="q5" value="b"> b) 5/3<br>
+    <input type="radio" name="q5" value="c"> c) 2 1/3<br>
+	
+    <h2>Question 6:</h2>
+    <p>What is the value of 3/8 - 1/4?</p>
+    <input type="radio" name="q6" value="a"> a) 1/8<br>
+    <input type="radio" name="q6" value="b"> b) 1/2<br>
+    <input type="radio" name="q6" value="c"> c) 5/8<br>
+
+    <h2>Question 7:</h2>
+    <p>What is the result of (4/5) ÷ (2/3)?</p>
+    <input type="radio" name="q7" value="a"> a) 2/3<br>
+    <input type="radio" name="q7" value="b"> b) 6/5<br>
+    <input type="radio" name="q7" value="c"> c) 12/5<br>
+
+    <h2>Question 8:</h2>
+    <p>What is 40% of 250?</p>
+    <input type="radio" name="q8" value="a"> a) 100<br>
+    <input type="radio" name="q8" value="b"> b) 150<br>
+    <input type="radio" name="q8" value="c"> c) 400<br>
+
+    <h2>Question 9:</h2>
+    <p>What is the square root of 144?</p>
+    <input type="radio" name="q9" value="a"> a) 9<br>
+    <input type="radio" name="q9" value="b"> b) 12<br>
+    <input type="radio" name="q9" value="c"> c) 16<br>
+
+    <h2>Question 10:</h2>
+    <p>What is the value of 2/3 + 4/5?</p>
+    <input type="radio" name="q10" value="a"> a) 22/15<br>
+    <input type="radio" name="q10" value="b"> b) 26/15<br>
+    <input type="radio" name="q10" value="c"> c) 8/15<br>
+
+    <h2>Question 11:</h2>
+    <p>What is the value of 5/6 × 2/5?</p>
+    <input type="radio" name="q11" value="a"> a) 1/3<br>
+    <input type="radio" name="q11" value="b"> b) 1/6<br>
+    <input type="radio" name="q11" value="c"> c) 1/15<br>
+
+    <h2>Question 12:</h2>
+    <p>What is 35% of 200?</p>
+    <input type="radio" name="q12" value="a"> a) 70<br>
+    <input type="radio" name="q12" value="b"> b) 35<br>
+    <input type="radio" name="q12" value="c"> c) 105<br>
+
+    <h2>Question 13:</h2>
+    <p>What is the value of (3/4) ÷ (1/2)?</p>
+    <input type="radio" name="q13" value="a"> a) 1/2<br>
+    <input type="radio" name="q13" value="b"> b) 2/3<br>
+    <input type="radio" name="q13" value="c"> c) 3/2<br>
+
+    <h2>Question 14:</h2>
+    <p>What is 25% of 80?</p>
+    <input type="radio" name="q14" value="a"> a) 15<br>
+    <input type="radio" name="q14" value="b"> b) 20<br>
+    <input type="radio" name="q14" value="c"> c) 25<br>
+
+    <h2>Question 15:</h2>
+    <p>What is the square root of 64?</p>
+    <input type="radio" name="q15" value="a"> a) 6<br>
+    <input type="radio" name="q15" value="b"> b) 8<br>
+    <input type="radio" name="q15" value="c"> c) 10<br>
+	
+	<h2>Fill in the Blank Questions:</h2>
+
+      <p>Question 1: Solve for x: 2x - 5 = 7. x = <input type="text" name="q16"></p>
+      <p>Question 2: The perimeter of a square is 20 cm. Each side measures _ cm. <input type="text" name="q17"></p>
+      <p>Question 3: What do you call a number that when read from left to right and right to left, is still read the same? Ex. 121, 808. <input type="text" name="q18"></p>
+      <p>Question 4: A rectangle has a length of 8 cm and a width of _ cm. Its area is 56 square centimeters. <input type="text" name="q19"></p>
+      <p>Question 5: Find the missing angle: In a triangle, one angle measures 40 degrees and another angle measures 60 degrees. The missing angle is _ degrees. <input type="text" name="q20"></p>
+
+    <button type="submit">Submit</button>
+	<button type="reset" onclick="resetForm()">Reset</button>
+  </form>
+
+  <div id="result"></div>
+
+  <script>
+   document.getElementById('examForm').addEventListener('submit', function(event) {
+  event.preventDefault(); // Prevent form submission
+
+  // Define correct answers
+  const correctAnswers = {
+    q1: 'c',
+    q2: 'b',
+    q3: 'c',
+    q4: 'b',
+    q5: 'b',
+    q6: 'a',
+    q7: 'b',
+    q8: 'a',
+    q9: 'b',
+    q10: 'a',
+    q11: 'a',
+    q12: 'a',
+    q13: 'c',
+    q14: 'b',
+    q15: 'b',
+  };
+
+  let score = 0;
+
+  // Iterate through the form inputs and compare user answers with correct answers
+   for (const question in correctAnswers) {
+        const userAnswer = document.querySelector('input[name="' + question + '"]:checked');
+
+        if (userAnswer && userAnswer.value === correctAnswers[question]) {
+          score++;
+        }
+      }
+
+  
+  // Check fill in the blank questions
+  const q16Answer = document.querySelector('input[name="q16"]').value.toLowerCase().trim();
+  const q17Answer = document.querySelector('input[name="q17"]').value.toLowerCase().trim();
+  const q18Answer = document.querySelector('input[name="q18"]').value.toLowerCase().trim();
+  const q19Answer = document.querySelector('input[name="q19"]').value.toLowerCase().trim();
+  const q20Answer = document.querySelector('input[name="q20"]').value.toLowerCase().trim();
+
+  if (q16Answer === '6') {
+    score++;
+  }
+  if (q17Answer === '5') {
+    score++;
+  }
+  if (q18Answer === 'palindrome') {
+    score++;
+  }
+  if (q19Answer === '7') {
+    score++;
+  }
+  if (q20Answer === '80') {
+    score++;
+  }
+
+  // Display the score
+  const resultContainer = document.getElementById('result');
+  resultContainer.innerHTML = 'Your score: ' + score + ' out of ' + (Object.keys(correctAnswers).length + 5); // Add 5 for the fill in the blank questions
+});
+
+function resetForm(){
+  window.location.reload(); 
+}
+  </script>
+</body>
+</html>
